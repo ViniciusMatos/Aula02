@@ -1,3 +1,4 @@
+// if (desvio) encadeado ou concatenado
 import java.util.Scanner;
 
 public class DesvioEncadeado {
@@ -14,6 +15,20 @@ public class DesvioEncadeado {
 	
 		/*Aqui devemos criar uma solução para realizar as verificações.*/
 		
+		if (idade < 16) {
+			
+			System.out.println("Você não pode votar nem embarcar");
+		}else {
+			
+			if(idade > 18) {
+				
+				System.out.println("Você é obrigado a votar");
+				
+			}else {
+			 
+				System.out.println("Você pode optar por votar e embarcar");
+			}
+		}
 		
 	
 		leitor.close();
